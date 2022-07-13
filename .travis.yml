@@ -13,6 +13,7 @@ env:
 before_install:
   - sudo sed -i -e '/local.*peer/s/postgres/all/' -e 's/peer\|md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
   - sudo service postgresql restart
+  - cat rollbar.sh
   - sleep 2
   - postgres --version
 script:
