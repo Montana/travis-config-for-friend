@@ -1,2 +1,2 @@
-require File.expand_path('../config/application', __FILE__)
+require File.expand_path('../config/database.yml', __FILE__)
 require 'rake'
