@@ -19,6 +19,5 @@ before_install:
   - postgres --version
 before_script:
   - gem install bundler
-  - bundle exec rspec spec
 script:
   - psql -c 'create database freecouches;' -U postgres 
