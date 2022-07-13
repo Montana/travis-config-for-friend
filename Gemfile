@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.1.2"
+ruby "2.5.0"
 
 gem "sinatra"
 gem "puma"
