@@ -17,5 +17,8 @@ before_install:
   - cat rollbar.sh
   - sleep 2
   - postgres --version
+before_script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
 script:
   - psql -c 'create database freecouches;' -U postgres 
