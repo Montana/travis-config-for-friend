@@ -1,4 +1,4 @@
-dist: jammy
+dist: xenial
 language: ruby
 addons:
   postgresql: "13"
@@ -17,3 +17,4 @@ before_install:
   - postgres --version
 script:
   - psql -c 'create database travis_ci_test;' -U postgres
+  - echo "freecouches setup" 
